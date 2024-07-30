@@ -1,0 +1,21 @@
+<%- include('../partials/layout', { title: 'Cargar Producto' }) %>
+<h1>Cargar Producto</h1>
+<form action="/products" method="POST">
+  <div class="mb-3">
+    <label for="name" class="form-label">Nombre del Producto</label>
+    <input type="text" class="form-control" id="name" name="name" required>
+  </div>
+  <div class="mb-3">
+    <label for="price" class="form-label">Precio</label>
+    <input type="number" class="form-control" id="price" name="price" required>
+  </div>
+  <div class="mb-3">
+    <label for="stock" class="form-label">Stock</label>
+    <input type="number" class="form-control" id="stock" name="stock" required>
+  </div>
+  <div class="mb-3">
+    <label for="barcode" class="form-label">Código de Barras</label>
+    <input type="text" class="form-control" id="barcode" name="barcode" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
